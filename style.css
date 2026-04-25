@@ -24,7 +24,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border: 2px solid rgba(210, 105, 30, 0.5);
   backdrop-filter: blur(10px);
-  max-width: 350px;
+  max-width: 400px;
   width: 100%;
 }
 
@@ -69,6 +69,7 @@ button {
   position: relative;
   overflow: hidden;
   text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
 }
 
 button::before {
@@ -96,7 +97,7 @@ button:active {
 
 .num {
   background: linear-gradient(145deg, #4A2C2A, #6F4E37);
-  color: #F5F5DC;
+  color:#F5F5DC;
   box-shadow: 0 8px 20px rgba(74, 44, 42, 0.4);
 }
 
@@ -107,7 +108,7 @@ button:active {
 
 .op {
   background: linear-gradient(145deg, #D2691E, #F4A460);
-  color: #4A2C2A;
+  color: #F5F5DC;
   font-weight: 700;
   box-shadow: 0 8px 20px rgba(210, 105, 30, 0.4);
 }
@@ -119,7 +120,7 @@ button:active {
 
 .clear {
   background: linear-gradient(145deg, #8B4513, #A0522D);
-  color: #F5F5DC;
+  color:#F5F5DC;
   box-shadow: 0 8px 20px rgba(139, 69, 19, 0.4);
 }
 
@@ -130,16 +131,27 @@ button:active {
 
 .equals {
   background: linear-gradient(145deg, #F4A460, #DAA520);
-  color: #4A2C2A;
-  font-weight: 800;
+  color: #F5F5DC;
+  font-weight: 650;
   font-size: 26px;
   box-shadow: 0 10px 25px rgba(244, 164, 96, 0.5);
-  grid-column: span 2;
 }
 
 .equals:hover {
   background: linear-gradient(145deg, #DAA520, #FFB347);
   box-shadow: 0 15px 30px rgba(255, 179, 71, 0.7);
+}
+
+.backspace {
+  background: linear-gradient(145deg, #5D4037, #6F4E37);
+  color: #F5F5DC;
+  font-size: 20px;
+  box-shadow: 0 8px 20px rgba(111, 78, 55, 0.4);
+}
+
+.backspace:hover {
+  background: linear-gradient(145deg, #8B4513, #A0522D);
+  box-shadow: 0 12px 25px rgba(139, 69, 19, 0.6);
 }
 
 @media (max-width: 480px) {
